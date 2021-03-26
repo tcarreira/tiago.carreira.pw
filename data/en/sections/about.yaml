@@ -8,44 +8,53 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Senior DevOps Engineer
 # your company information
 company:
-  name: Example Co.
-  url: "https://www.example.com"
+  name: Globo.com
+  url: "https://globo.com"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
+summary: |
+  Having more than 7 years of experience with DevOps, I’m experienced with modern technologies (eg: Docker),
+  proficient with Linux systems and many DevOps tools (eg: git, CI/CD, monitoring) and I’m confident developing in
+  Python and Go.
+
+  Passionate about Linux, Open Source and productivity (I love scripting and automation). No person should be a
+  single point of failure - procedures should be documented and/or automated.
+
+  I’m looking towards working with smart people, with whom I could learn and help learning; where autonomy is a
+  valuable asset and improving is more important than finding who made a mistake.
+
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
-- name: Email
+- name: shadowed-mail # this is a special one
   icon: "fas fa-envelope"
-  url: "example@gmail.com"
+  id: "shadowed-mail" 
+  direction: "tiago.g.carreira" 
+  domain: "gmail.com" 
+  fakemail: "fakemail@dispostable.com" 
+  subject: "I've seen your profile at tiago.carreira.pw" 
+  fakebody: "Replace tiago.g.carreira --at-- gmail -dot- com" 
+  prebody: "tiago.g.carreira --at-- gmail -dot- com" 
 
 - name: Github
   icon: "fab fa-github"
-  url: "https://www.github.com/example"
-
-- name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "#"
+  url: "https://github.com/tcarreira"
 
 - name: LinkedIn
   icon: "fab fa-linkedin"
-  url: "#"
+  url: "https://www.linkedin.com/in/tcarreira"
 
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "#"
+- name: Telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/tcarreira"
 
-- name: Facebook
-  icon: "fab fa-facebook"
-  url: "#"
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.

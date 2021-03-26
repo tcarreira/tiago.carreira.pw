@@ -37,6 +37,10 @@ enableEmoji: true
 
 # Site parameters
 params:
+
+  customJS: 
+    - js/custom.js
+
   background: /images/site/background.jpg
 
   # Provide logos for your site. The inverted logo will be used in the initial
