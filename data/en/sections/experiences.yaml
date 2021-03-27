@@ -3,62 +3,54 @@ section:
   name: Experiences
   id: experiences
   enable: true
-  weight: 3
+  weight: 2
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true 
 
-# Your experiences
+
 experiences:
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
-    # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    name: Globo.com (via Storm Group)
+    url: "https://globo.com"
+    location: Rio de Janeiro, Brazil
+    overview: The biggest media company at Latin America
   positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
+  - designation: Senior DevOps Engineer
+    start: August 2020
     responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
-
-  - designation: Junior Software Engineer
-    start: Nov 2017
-    end: Oct 2019
-    responsibilities:
-    - Implement and test xyz feature for abc tool.
-    - Support client for abc tool.
-    - Learn k,d,w technology for xyz.
+    - "Designed / improved  CI/CD Pipelines, using Gitlab-CI and Docker"
+    - "Improved reliability for an API Gateway (Kong), serving 10K requests/s"
+    - "Programed and patch different code stacks (bash, Go, python, Lua, etc...)"
+    - "Provided support for multiple heterogeneous services across the company"
 
 - company:
-    name: PreExample Co.
-    url: "https://www.preexample.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    name: SAPO (via BOLD by Devoteam)
+    url: "https://sapo.pt"
+    location: Lisbon, Portugal
+    overview: The national media content and services provider
   positions:
-  - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+  - designation: DevOps / Operations Engineer
+    start: July 2017
+    end: December 2019
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+    - "Implemented a monitoring stack with High Availability, using Grafana + Prometheus + Thanos (solely)"
+    - "Developed a Python/Django RESTful API for SSL Cert management (solely from scratch to production)"
+    - "DevOps advocate: improving Continuous Integration and best practices across the organization"
+    - "Data Center migration: bare metal, VM’s, networking, data and storage (ensuring no downtime)"
+    - "Maintaining 500+ servers (using Puppet), 100+ services, both legacy and modern systems, on-call 24/7"
+    - "Solving internal operational tickets: forensics, bugs detection, infrastructure management"
 
 - company:
-    name: Intern Counting Company (ICC).
-    url: "https://www.intern.com"
-    location: Intern Land
-    overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
+    name: Premium Minds
+    url: "https://premium-minds.com"
+    location: Lisbon, Portugal
+    overview: Software house, delivering premium technological solutions to their clients
   positions:
-  - designation: Intern
-    start: Jun 2015
-    end: Jan 2016
+  - designation: DevOps Engineer
+    start: December 2013
+    end: June 2017
     responsibilities:
-    - Count lost of interns.
-    - Count more interns.
-    - Count me as an intern.
+    - "Migrated on-premises infrastructure to AWS (EC2, RDS, VPC, etc...) - infrastructure as code with python/boto3"
+    - "Defined the infrastructure and deployment pipeline for a High Available service on AWS - telpark.com"
+    - "Managing Continuous Integration using Jenkins and Puppet"
