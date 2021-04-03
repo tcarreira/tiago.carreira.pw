@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="511.00101pt"
+   version="1.1"
+   viewBox="-34 1 442.4436 512"
+   width="442.4436pt"
+   id="svg5"
+   sodipodi:docname="bash.svg"
+   inkscape:export-filename="/home/tcarreira/projects/tiago.carreira.pw/assets/images/sections/skills/bash.png"
+   inkscape:export-xdpi="16.27"
+   inkscape:export-ydpi="16.27"
+   inkscape:version="1.0.2 (394de47547, 2021-03-26)">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1051"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="0.18551175"
+     inkscape:cx="-203.541"
+     inkscape:cy="499.11817"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <g
+     id="surface1"
+     transform="translate(-34.999495,1)">
+    <path
+       d="M 222.15234,0 0.5,128 V 383.99609 L 222.15234,512 443.80859,383.99609 V 128 Z M 136.5625,296.35156 115.33594,317.58203 53.757812,256 115.33594,194.42187 136.5625,215.64844 96.210938,256 Z M 200.25,333.375 173.39844,319.94922 244.05859,178.625 270.91016,192.05078 Z M 328.97266,317.57812 307.74219,296.35156 348.09766,256 307.74219,215.64844 328.97266,194.41797 390.55078,256 Z m 0,0"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path2" />
+  </g>
+</svg>

@@ -1,9 +1,9 @@
 # section information
 section:
-  name: Skills
+  name: Technical Skills
   id: skills
   enable: true
-  weight: 2
+  weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -11,39 +11,57 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
-
-- name: Go Development
-  logo: "/images/sections/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
-
-- name: Cloud Computing
-  logo: "/images/sections/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-
-- name: Docker
-  logo: "/images/sections/skills/docker.svg"
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  url: "https://www.docker.com/"
-
-- name: Prometheus
-  logo: "/images/sections/skills/prometheus.png"
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
-
 - name: Linux
   logo: "/images/sections/skills/linux.png"
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+  summary: "Using Linux as daily Operating System. Mainly Ubuntu, but also Debian and CentOS/RHEL"
+  level: 1
+
+- name: Docker
+  logo: "/images/sections/skills/docker.png"
+  summary: "Running dockerized containers as much as possible. Most development projects using docker-compose with multi-stage build"
+  level: 1
+
+- name: Cloud
+  logo: "/images/sections/skills/cloud.png"
+  summary: "Building, managing and deploying services on Cloud. Experienced with AWS and other PaaS such as Tsuru or Heroku"
+
+- name: Automation
+  logo: "/images/sections/skills/automation.png"
+  summary: "I'm lazy and don't like to repeat tedious tasks. Experienced with Puppet and Ansible"
+  level: 1
+
+- name: CI/CD
+  logo: "/images/sections/skills/ci_cd.png"
+  summary: "Running custom and reliable Continuous Integration/Deployment (CI/CD) pipelines. Experienced with Jenkins, Gitlab-CI and Github Actions"
+  # level: 1
+
+- name: Observability
+  logo: "/images/sections/skills/observability.png"
+  summary: "Monitoring with Prometheus and visualizing with Grafana (and alarms only when needed). Also experienced with ELK stack, Sentry and Jaeger"
+
+- name: Bash / Shell
+  logo: "/images/sections/skills/bash.png"
+  summary: "Living in the terminal, and automating as much as feasible. I'm married to Bash (despite having an affair with zsh)"
+  level: 1
 
 - name: Git
   logo: "/images/sections/skills/git.png"
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  url: "https://git-scm.com/"
+  summary: "Provides traceability, experimentation and collaboration. Experienced with Gitlab and Github (this website is hosted on Github Pages)"
 
-- name: C++
-  logo: "/images/sections/skills/c++.png"
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+- name: REST
+  logo: "/images/sections/skills/api.png"
+  summary: "Developing and using RESTful applications everywhere. Experienced with managing a API Gateway as a Service (Kong)"
+
+- name: Python
+  logo: "/images/sections/skills/python.png"
+  summary: "Using as the main language for scripting and solving problems. Also experienced with Web Development using Django"
+  level: 1
+
+- name: Go
+  logo: "/images/sections/skills/go.png"
+  summary: "Learning and loving it. I have a secret desire to be working with it, a lot"
+
+- name: SQL / NoSQL
+  logo: "/images/sections/skills/sql.png"
+  summary: "Deep understanding of SQL and experienced with PostgreSQL and MySQL administration. Knowledged on NoSQL (MongoDB)"
+
