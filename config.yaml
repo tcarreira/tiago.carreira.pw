@@ -38,8 +38,11 @@ enableEmoji: true
 # Site parameters
 params:
 
-  customJS: 
+  customJS:
     - js/custom.js
+
+  customCSS:
+    - css/custom.css
 
   background: /images/site/background.jpg
 
