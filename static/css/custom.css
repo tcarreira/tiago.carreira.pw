@@ -2,3 +2,15 @@
     object-fit: contain;
     width: auto;
 }
+
+.education-section .taken-courses ul {
+    margin-bottom: 1em !important;
+}
+
+.education-section .taken-courses .hidden-course {
+    display: list-item !important;
+}
+
+.education-section .taken-courses .show-more-btn {
+    display: none;
+}
