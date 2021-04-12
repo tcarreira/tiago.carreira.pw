@@ -8,57 +8,89 @@ section:
   # Can optionally hide the title in sections
   # hideTitle: true
 
-# filter buttons
 buttons:
 - name: All
   filter: "all"
-- name: Professional
-  filter: "professional"
-- name: Academic
-  filter: "academic"
-- name: Hobby
+- name: Technical
+  filter: "technical"
+- name: Hobbies
   filter: "hobby"
+- name: Go
+  filter: "go"
+- name: Python
+  filter: "python"
+- name: Docker
+  filter: "docker"
 
-# your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+  - name: Technical advisor for CA course
+    timeline: Feb 2021
+    url: https://github.com/tcarreira/nand2tetris
+    summary: Advisor for teaching Computer Architecture fundamentals to teenagers ([treetree2.school](https://treetree2.school/cursos/2021/ac-i))
+    tags: ["hobby"]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning"]
+  - name: Podcast (100% open sourced)
+    timeline: Sep 2020 - Jan 2021
+    url: https://github.com/marmita-de-redon
+    summary: 100% free and open sourced podcast (hosting, website, art, automation, etc.)
+    tags: ["hobby"]
 
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+  - name: Advent of Code 2020
+    timeline: Dec 2020
+    url: https://github.com/tcarreira/adventofcode/2020
+    summary: Solving programming puzzles in python (puzzles from [adventofcode.com](https://adventofcode.com/2020))
+    tags: ["technical", "python"]
 
-- name: Nocode
-  logo: /images/sections/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
+  - name: CRUD API in Go
+    timeline: Jul 2020
+    url: https://github.com/tcarreira/commentapi
+    summary: Simple CRUD REST API for storing and retrieving comments
+    tags: ["technical", "go", "rest"]
 
-- name: Toha
-  logo: /images/sections/projects/toha.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+  - name: roaw2020 - Web server in Go
+    timeline: Jun 2020
+    url: https://github.com/tcarreira/roaw2020
+    summary: Run Once A Week - A dashboard for comparing Strava users' activities
+    tags: ["hobby", "go", "heroku"]
+
+  - name: CRUD API in Python
+    timeline: May 2020
+    url: https://github.com/tcarreira/jogging-tracker
+    summary: Simple REST API for tracking jogging times of users
+    tags: ["technical", "python", "rest"]
+
+  - name: Django on Docker
+    timeline: Dec 2019
+    url: https://github.com/tcarreira/django-docker
+    summary: A Django application (with celery) in Docker, used as demo for a talk
+    tags: ["technical", "python", "docker", "talks"]
+
+  - name: Manage remote slides with SSE
+    timeline: Oct 2019
+    url: https://github.com/tcarreira/remark-remote
+    summary: REST API for real time updates on a browser, using Server Side Events
+    tags: ["hobby", "html", "go"]
+
+  - name: nand2tetris - grade with Docker
+    timeline: Feb 2021
+    url: https://github.com/tcarreira/nand2tetris-autograder
+    summary: Autograder for Nand2Tetris HDL projects on Docker container
+    tags: ["technical", "hobby", "docker"]
+
+  - name: Automate new podcast episodes
+    timeline: Oct 2020
+    url: https://github.com/marmita-de-redon/automation
+    summary: Script for rendering and publishing a new episode for the podcast [marmita.pt](https://marmita.pt)
+    tags: ["hobby", "bash"]
+
+  - name: Provide i18n for a Hugo theme
+    timeline: Sep 2020
+    url: https://github.com/tcarreira/hugo-clarity
+    summary: Contribute with internationalization for the Hugo-Clarity theme for Hugo
+    tags: ["hobby", "html"]
+
+  - name: Slides from my talks about Docker
+    timeline: 2019
+    url: https://github.com/tcarreira/presentations
+    summary: Slides made with remark-js - presentation slides as code
+    tags: ["technical", "hobby", "docker", "talks"]
