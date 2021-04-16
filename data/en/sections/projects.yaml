@@ -47,10 +47,10 @@ projects:
     summary: Simple CRUD REST API for storing and retrieving comments
     tags: ["technical", "go", "rest"]
 
-  - name: roaw2020 - Web server in Go
+  - name: Dashboard for running activities
     timeline: Jun 2020
     url: https://github.com/tcarreira/roaw2020
-    summary: Run Once A Week - A dashboard for comparing Strava users' activities
+    summary: ROAW (Run Once A Week) - A dashboard for comparing Strava users' activities
     tags: ["hobby", "go", "heroku"]
 
   - name: CRUD API in Python
