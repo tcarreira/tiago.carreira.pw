@@ -29,13 +29,13 @@
           {{ range .socialLinks }}
           <li>
             {{ if eq .name "shadowed-mail" }}
-            <a 
-                id="{{ .id }}" 
-                direction="{{ .direction }}" 
-                domain="{{ .domain }}" 
+            <a
+                class="{{ .id }}"
+                direction="{{ .direction }}"
+                domain="{{ .domain }}"
                 subject="{{ .subject }}"
                 target="/"
-                href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}" 
+                href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}"
                 >
                 <i class="{{ .icon }}"></i>
             </a>

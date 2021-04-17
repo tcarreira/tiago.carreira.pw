@@ -1,0 +1,34 @@
+# section information
+section:
+  name: Contacts
+  id: contacts
+  enable: true
+  weight: 8
+  showOnNavbar: true
+  template: sections/contacts.html
+
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: E-mail # this is a special one
+  icon: "fas fa-envelope"
+  id: "shadowed-mail"
+  direction: "tiago.g.carreira"
+  domain: "gmail.com"
+  fakemail: "fakemail@dispostable.com"
+  subject: "I've seen your profile at tiago.carreira.pw"
+  fakebody: "Replace tiago.g.carreira --at-- gmail -dot- com"
+  prebody: "tiago.g.carreira --at-- gmail -dot- com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/tcarreira"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/tcarreira"
+
+- name: Telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/tcarreira"

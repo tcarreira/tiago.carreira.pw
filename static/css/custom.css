@@ -18,3 +18,19 @@
 .initial-navbar {
     background-color: #1c2d41;
 }
+
+.contacts a {
+    color: #3c4858;
+}
+.contacts a i {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+}
+.contacts {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+
+
