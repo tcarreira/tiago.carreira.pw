@@ -11,7 +11,7 @@ section:
 # Your achievements achievements
 achievements:
 - title: Adrenaline seeker
-  image: /images/sections/achievements/adrenaline.png
+  image: /images/sections/achievements/adrenaline.jpg
   summary: Trying new activities (skydiving, coasteering, rock climbing)
 - title: Going further
   image: /images/sections/achievements/running.jpg
@@ -20,5 +20,5 @@ achievements:
   image: /images/sections/achievements/parenting.jpg
   summary: Successfully surviving being a father since 2018
 - title: Video Maker
-  image: /images/sections/achievements/youtube.png
+  image: /images/sections/achievements/youtube.jpg
   summary: Short-video making
