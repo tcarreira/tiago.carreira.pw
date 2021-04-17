@@ -1,13 +1,10 @@
 # some information about you
 name: "Tiago Carreira (tcarreira)"
 nickname: "Tiago Carreira"
+
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
 image: "images/author/tcarreira.jpg"
-# give your some contact information. they will be used in the footer
-contactInfo: 
-  email: "johndoe@example.com"
-  phone: "+0123456789"
 
 # some summary about what you do
 summary:
@@ -15,3 +12,6 @@ summary:
   - I am a Developer
   - I am an Artist
   - I love Open-Source
+
+# link on the footer
+sourceRepo: https://github.com/tcarreira/tiago.carreira.pw
