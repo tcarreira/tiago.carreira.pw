@@ -13,9 +13,27 @@
 {{ end }}
 {{ $favicon = $favicon.RelPermalink}}
 
+{{ $siteConfig := (index site.Data site.Language.Lang).site }}
+
+{{ $authorImage := ""}}
+{{ if $siteConfig.linkPreviewImage }}
+  {{ $authorImage = $siteConfig.linkPreviewImage }}
+  {{ $authorImage = resources.Get $authorImage }}
+  {{ $authorImage = $authorImage.Fit "148x148" }}
+{{ end }}
+
+
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<meta name="twitter:card" content="summary"></meta>
+{{ if $siteConfig.twitter }}<meta name="twitter:site" content="{{ $siteConfig.twitter }}">{{ end }}
+{{ if $siteConfig.author }}<meta name="author" content="{{$siteConfig.author}}"> {{end}}
+{{ if $siteConfig.description }}<meta og:description="{{ $siteConfig.description }}">{{ end }}
+{{ if $siteConfig.linkPreviewImage }}<meta og:image="{{ $authorImage.RelPermalink }}">{{ end }}
+
 
 <!-- ============ import common css ========== -->
 <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | relURL }}"/>

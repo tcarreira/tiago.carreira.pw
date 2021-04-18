@@ -1,8 +1,15 @@
 # Copyright Notice
 copyright: © 2021 Copyright.
 
+# Open Graph link preview stuff
 # Meta description for your site.  This will help the search engines to find your site.
-description: Portfolio and personal page for Tiago Carreira (tcarreira).
+description: Tiago Carreira (tcarreira) - Senior DevOps Engineer and Open Source Software lover. Read more about me.
+
+# Recommended resolution is 1200 pixels x 627 pixels (1.91/1 ratio) and image size shouldn’t exceed 5MB.
+linkPreviewImage: images/author/tcarreira.jpg
+author: Tiago Carreira
+twitter: "@tcarreira"
+
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
