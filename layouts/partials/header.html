@@ -36,8 +36,8 @@
 {{ if $siteConfig.author }}<meta name="author" content="{{$siteConfig.author}}"></meta> {{end}}
 {{ if $siteConfig.description }}<meta og:description="{{ $siteConfig.description }}"></meta>{{ end }}
 {{ if $siteConfig.description }}<meta name="description" property="og:description" content="{{ $siteConfig.description }}"></meta>{{ end }}
-{{ if $siteConfig.linkPreviewImage }}<meta og:image="{{ $authorImage.RelPermalink }}"></meta>{{ end }}
-{{ if $siteConfig.linkPreviewImage }}<meta name="image" property="og:image" content="{{ $authorImage.RelPermalink }}"></meta>{{ end }}
+{{ if $siteConfig.linkPreviewImage }}<meta og:image="{{ $authorImage.Permalink }}"></meta>{{ end }}
+{{ if $siteConfig.linkPreviewImage }}<meta name="image" property="og:image" content="{{ $authorImage.Permalink }}"></meta>{{ end }}
 <meta property="og:type" content="article"></meta>
 {{ if $siteConfig.publishedTime }}<meta property="article:published_time" content="{{ $siteConfig.publishedTime }}"></meta>{{ end }}
 
