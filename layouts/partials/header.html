@@ -19,7 +19,6 @@
 {{ if $siteConfig.linkPreviewImage }}
   {{ $authorImage = $siteConfig.linkPreviewImage }}
   {{ $authorImage = resources.Get $authorImage }}
-  {{ $authorImage = $authorImage.Fit "148x148" }}
 {{ end }}
 
 
