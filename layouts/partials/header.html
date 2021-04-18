@@ -30,6 +30,8 @@
 {{ if .Site.Title }}<meta og:title="{{ .Site.Title }}"></meta>{{ end }}
 {{ if .Site.Title }}<meta name="title" property="og:title" content="{{ .Site.Title }}"></meta>{{ end }}
 {{ if .Site.Title }}<meta name="twitter:title" property="og:title" content="{{ .Site.Title }}"></meta>{{ end }}
+{{ if .Site.BaseURL }}<meta og:url="{{ .Site.BaseURL }}"></meta>{{ end }}
+{{ if .Site.BaseURL }}<meta name="url" property="og:url" content="{{ .Site.BaseURL }}"></meta>{{ end }}
 <meta name="twitter:card" content="summary"></meta>
 {{ if $siteConfig.twitter }}<meta name="twitter:site" content="{{ $siteConfig.twitter }}"></meta>{{ end }}
 {{ if $siteConfig.twitter }}<meta name="twitter:creator" content="{{ $siteConfig.twitter }}"></meta>{{ end }}
