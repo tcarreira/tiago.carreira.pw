@@ -1,15 +1,15 @@
 # Copyright Notice
 copyright: © 2021 Copyright.
 
-# Open Graph link preview stuff
+# Open Graph Protocol - link preview stuff
 # Meta description for your site.  This will help the search engines to find your site.
-description: Tiago Carreira (tcarreira) - Senior DevOps Engineer and Open Source Software lover. Read more about me.
+description: Senior DevOps Engineer and Open Source Software lover.
 
 # Recommended resolution is 1200 pixels x 627 pixels (1.91/1 ratio) and image size shouldn’t exceed 5MB.
 linkPreviewImage: images/author/tcarreira.jpg
 author: Tiago Carreira
 twitter: "@tcarreira"
-
+publishedTime: "2021-04-15"
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.

@@ -28,11 +28,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+{{ if .Site.Title }}<meta og:title="{{ .Site.Title }}"></meta>{{ end }}
+{{ if .Site.Title }}<meta name="title" property="og:title" content="{{ .Site.Title }}"></meta>{{ end }}
 <meta name="twitter:card" content="summary"></meta>
-{{ if $siteConfig.twitter }}<meta name="twitter:site" content="{{ $siteConfig.twitter }}">{{ end }}
-{{ if $siteConfig.author }}<meta name="author" content="{{$siteConfig.author}}"> {{end}}
-{{ if $siteConfig.description }}<meta og:description="{{ $siteConfig.description }}">{{ end }}
-{{ if $siteConfig.linkPreviewImage }}<meta og:image="{{ $authorImage.RelPermalink }}">{{ end }}
+{{ if $siteConfig.twitter }}<meta name="twitter:site" content="{{ $siteConfig.twitter }}"></meta>{{ end }}
+{{ if $siteConfig.author }}<meta name="author" content="{{$siteConfig.author}}"></meta> {{end}}
+{{ if $siteConfig.description }}<meta og:description="{{ $siteConfig.description }}"></meta>{{ end }}
+{{ if $siteConfig.description }}<meta name="description" property="og:description" content="{{ $siteConfig.description }}"></meta>{{ end }}
+{{ if $siteConfig.linkPreviewImage }}<meta og:image="{{ $authorImage.RelPermalink }}"></meta>{{ end }}
+{{ if $siteConfig.linkPreviewImage }}<meta name="image" property="og:image" content="{{ $authorImage.RelPermalink }}"></meta>{{ end }}
+<meta property="og:type" content="article"></meta>
+{{ if $siteConfig.publishedTime }}<meta property="article:published_time" content="{{ $siteConfig.publishedTime }}"></meta>{{ end }}
+
 
 
 <!-- ============ import common css ========== -->
