@@ -35,13 +35,13 @@ summary: |
 socialLinks:
 - name: shadowed-mail # this is a special one
   icon: "fas fa-envelope"
-  id: "shadowed-mail" 
-  direction: "tiago.g.carreira" 
-  domain: "gmail.com" 
-  fakemail: "fakemail@dispostable.com" 
-  subject: "I've seen your profile at tiago.carreira.pw" 
-  fakebody: "Replace tiago.g.carreira --at-- gmail -dot- com" 
-  prebody: "tiago.g.carreira --at-- gmail -dot- com" 
+  id: "shadowed-mail"
+  direction: "tiago.g.carreira"
+  domain: "gmail.com"
+  fakemail: "fakemail@dispostable.com"
+  subject: "I've seen your profile at tiago.carreira.pw"
+  fakebody: "Replace tiago.g.carreira --at-- gmail -dot- com"
+  prebody: "tiago.g.carreira --at-- gmail -dot- com"
 
 - name: Github
   icon: "fab fa-github"
@@ -63,13 +63,13 @@ softSkills:
 - name: Productivity
   percentage: 100
   color: blue
-- name: Fast Learner
+- name: Fast Learning
   percentage: 100
   color: yellow
 - name: Adaptability
   percentage: 100
   color: pink
-- name: Proactive
+- name: Proactivity
   percentage: 100
   color: green
 - name: Friendly
