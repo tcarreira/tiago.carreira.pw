@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Achievements
+  name: Personal Endeavors
   id: achievements
   enable: true
   weight: 7
@@ -13,12 +13,18 @@ achievements:
 - title: Adrenaline seeker
   image: /images/sections/achievements/adrenaline.jpg
   summary: Trying new activities (skydiving, coasteering, rock climbing)
-- title: Going further
+- title: Sports
   image: /images/sections/achievements/running.jpg
-  summary: Running (Marathon), cycling (Lisbon-Santiago 800Km), Obstacle Course Run
+  summary: Running (marathon), cycling (Lisbon - Santiago 600+ Km), Obstacle Course Run
+- title: Video production
+  image: /images/sections/achievements/youtube.jpg
+  summary: Short-video producer/editor/maker
+- title: Podcasting
+  image: /images/sections/achievements/podcast.jpg
+  summary: Create and produce a podcast, making everything (media, content, producing, hosting, etc.) free and open source
+- title: Music
+  image: /images/sections/achievements/flute.jpg
+  summary: Able to play clarinet, transverse flute, guitar, piano. Being part of multiple musical groups.
 - title: Being a father
   image: /images/sections/achievements/parenting.jpg
   summary: Successfully surviving being a father since 2018
-- title: Video Maker
-  image: /images/sections/achievements/youtube.jpg
-  summary: Short-video making
