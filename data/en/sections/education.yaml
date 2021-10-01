@@ -28,11 +28,18 @@ degrees:
       - Center for Electrical and Computer Engineering (Autonomous Section)
       - TUIST (Musical Band)
 
+  - icon: fa-cloud
+    name: Google Cloud Certified (c880f8ea-7724-4ad4-9ad9-cf3e3f79fc28)
+    institution:
+      name: Associate Cloud Engineer
+      url: https://www.credential.net/c880f8ea-7724-4ad4-9ad9-cf3e3f79fc28
+
   - icon: fa-laptop-code
     institution:
       name: Training and Courses
     takenCourses:
       courses:
+        - name: July 2021 - Cloud Engineer @ Pluralsight
         - name: May 2020 - NDG Linux I/II course @ Cisco Networking Academy
         - name: Jan 2019 - LPI DevOps Tools Engineer @ Linux Academy
         - name: Mar 2017 - Certified Ethical Hacker (CEH) @ e-careers

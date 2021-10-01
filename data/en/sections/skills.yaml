@@ -23,11 +23,11 @@ skills:
 
 - name: Cloud
   logo: "/images/sections/skills/cloud.png"
-  summary: "Building, managing and deploying services on Cloud. Experienced with AWS and other PaaS such as Tsuru or Heroku"
+  summary: "Building, managing and deploying services on Cloud. Certified on Google Cloud (GCP). Experienced with AWS and other PaaS such as Tsuru or Heroku"
 
 - name: Automation
   logo: "/images/sections/skills/automation.png"
-  summary: "I'm lazy and don't like to repeat tedious tasks. Experienced with Puppet and Ansible"
+  summary: "I'm lazy and don't like to repeat tedious tasks. Experienced with Puppet, Terraform and Ansible"
   level: 1
 
 - name: CI/CD

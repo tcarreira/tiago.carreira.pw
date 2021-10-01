@@ -6,18 +6,25 @@ section:
   weight: 2
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 
 experiences:
 - company:
-    name: Globo.com (via Storm Group)
+    name: Globo.com
     url: "https://globo.com"
     location: Rio de Janeiro, Brazil
-    overview: The biggest media company at Latin America
+    overview: The biggest media company in Latin America
   positions:
-  - designation: Senior DevOps Engineer
+  - designation: DevOps Specialist
+    start: July 2021
+    responsibilities:
+    - "Reliably migrating applications to GCP cloud, using Infrastructure as Code (Terraform)"
+    - "Improving Development experience: fast, easy and reproducible, with containers (Docker)"
+    - "Improving CI/CD pipeline: faster and cheaper (Gitlab-CI)"
+  - designation: Senior DevOps Engineer (via Storm Group)
     start: August 2020
+    end: June 2021
     responsibilities:
     - "Designed / improved  CI/CD Pipelines, using Gitlab-CI and Docker"
     - "Improved reliability for an API Gateway (Kong), serving 10K requests/s"
