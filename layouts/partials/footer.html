@@ -4,6 +4,7 @@
 {{ end }}
 
 {{ $copyrightNotice := "© 2020 Copyright."}}
+{{ $siteConfig := (index site.Data site.Language.Lang).site }}
 {{ if (index site.Data site.Language.Lang).site }}
   {{ $siteConfig := (index site.Data site.Language.Lang).site }}
   {{ if $siteConfig.copyright }}
@@ -30,7 +31,12 @@
         </a>
         {{end}}{{end}}
       </div>
-      <div class="col-md-4 text-center">{{ $copyrightNotice | markdownify }}</div>
+      <div class="col-md-4 text-center">
+        {{ $copyrightNotice | markdownify }}
+        {{ with $siteConfig.modifiedTime }}
+          (updated on {{ . | time.Format "Jan 2006" | safeHTMLAttr }})
+        {{ end }}
+      </div>
       <div class="col-md-4 text-right">
         <a id="hugo" href="https://gohugo.io/">{{ i18n "hugoAttributionText" }}
         <img
