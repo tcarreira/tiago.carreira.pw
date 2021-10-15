@@ -30,8 +30,9 @@ degrees:
 
   - icon: fa-cloud
     name: Google Cloud Certified (c880f8ea-7724-4ad4-9ad9-cf3e3f79fc28)
+    timeframe: September 2021
     institution:
-      name: Associate Cloud Engineer
+      name: GCP - Associate Cloud Engineer
       url: https://www.credential.net/c880f8ea-7724-4ad4-9ad9-cf3e3f79fc28
 
   - icon: fa-laptop-code
