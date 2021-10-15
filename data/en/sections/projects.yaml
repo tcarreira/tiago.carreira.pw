@@ -9,18 +9,18 @@ section:
   # hideTitle: true
 
 buttons:
-- name: All
-  filter: "all"
-- name: Technical
-  filter: "technical"
-- name: Hobbies
-  filter: "hobby"
-- name: Go
-  filter: "go"
-- name: Python
-  filter: "python"
-- name: Docker
-  filter: "docker"
+  - name: All
+    filter: "all"
+  - name: Technical
+    filter: "technical"
+  - name: Hobbies
+    filter: "hobby"
+  - name: Go
+    filter: "go"
+  - name: Python
+    filter: "python"
+  - name: Docker
+    filter: "docker"
 
 projects:
   - name: Technical advisor for CA course
@@ -89,8 +89,8 @@ projects:
     summary: Contribute with internationalization for the Hugo-Clarity theme for Hugo
     tags: ["hobby", "html"]
 
-  - name: Slides from my talks about Docker
+  - name: Slides from my talks
     timeline: 2019
-    url: https://github.com/tcarreira/presentations
+    url: https://tcarreira.github.io/
     summary: Slides made with remark-js - presentation slides as code
     tags: ["technical", "hobby", "docker", "talks"]
