@@ -1,3 +1,11 @@
+#homePageBackgroundImageDivStyled {
+    filter: blur(0.3em);
+    -webkit-filter: blur(0.3em);
+    -moz-filter: blur(0.3em);
+    -o-filter: blur(0.3em);
+    -ms-filter: blur(0.3em);
+}
+
 .card-img-xs {
     object-fit: contain;
     width: auto;
