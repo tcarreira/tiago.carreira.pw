@@ -15,10 +15,10 @@ experiences:
       location: Rio de Janeiro, Brazil
       overview: The biggest media company in Latin America
     positions:
-      - designation: DevOps / Cloud Specialist
+      - designation: DevOps / Cloud Specialist @ tsuru.io
         start: April 2022
         responsibilities:
-          - "Maintaining an Open Source PaaS (Platform as a Service) in Go - [tsuru.io](https://tsuru.io) | [github.com/tsuru](https:github.com/tsuru)"
+          - "Maintaining an Open Source PaaS (Platform as a Service) in Go - [github.com/tsuru](https:github.com/tsuru)"
           - "Managing multiple Kubernetes Clusters (with custom resources) - 300+ nodes | 15k+ pods"
           - "Developing terraform providers"
       - designation: DevOps Specialist
