@@ -3,7 +3,7 @@ section:
   name: Technical Skills
   id: skills
   enable: true
-  weight: 3
+  weight: 4
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -16,9 +16,9 @@ skills:
   summary: "Using Linux as daily Operating System. Mainly Ubuntu, but also Debian and CentOS/RHEL"
   level: 1
 
-- name: Docker
-  logo: "/images/sections/skills/docker.png"
-  summary: "Running dockerized containers as much as possible. Most development projects using docker-compose with multi-stage build"
+- name: Containers
+  logo: "/images/sections/skills/containers.png"
+  summary: "Maintaining multiple Kubernetes clusters (300+ nodes) and running dockerized containers as much as possible. Docker speaker and evangelist"
   level: 1
 
 - name: Cloud
@@ -59,7 +59,7 @@ skills:
 
 - name: Go
   logo: "/images/sections/skills/go.png"
-  summary: "Learning and loving it. I have a secret desire to be working with it, a lot"
+  summary: "Using as the main language for performant applications and CLI tools for devs. Also using it for extending K8S custom resources and Terraform providers"
 
 - name: SQL / NoSQL
   logo: "/images/sections/skills/sql.png"

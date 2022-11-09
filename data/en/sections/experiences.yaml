@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Experiences
+  name: Work Experience
   id: experiences
   enable: true
   weight: 2
@@ -15,21 +15,26 @@ experiences:
       location: Rio de Janeiro, Brazil
       overview: The biggest media company in Latin America
     positions:
+      - designation: DevOps / Cloud Specialist
+        start: April 2022
+        responsibilities:
+          - "Maintaining an Open Source PaaS (Platform as a Service) in Go - [tsuru.io](https://tsuru.io) | [github.com/tsuru](https:github.com/tsuru)"
+          - "Managing multiple Kubernetes Clusters (with custom resources) - 300+ nodes | 15k+ pods"
+          - "Developing terraform providers"
       - designation: DevOps Specialist
         start: July 2021
+        end: March 2022
         responsibilities:
           - "Reliably migrating applications to GCP cloud, using Infrastructure as Code (Terraform)"
-          - "Improving Development experience: fast, easy and reproducible, with containers (Docker)"
-          - "Improving CI/CD pipeline: faster and cheaper (Gitlab-CI)"
+          - "Support and extend functionality of an API Gateway (Kong)"
           - "Instructor on Docker technical training sessions"
       - designation: Senior DevOps Engineer (via Storm Group)
         start: August 2020
         end: June 2021
         responsibilities:
-          - "Designed / improved  CI/CD Pipelines, using Gitlab-CI and Docker"
+          - "Designed / improved CI/CD Pipelines, using Gitlab-CI and Docker"
           - "Improved reliability for an API Gateway (Kong), serving 10K requests/s"
           - "Programed and patch different code stacks (bash, Go, python, Lua, etc...)"
-          - "Provided support for multiple heterogeneous services across the company"
 
   - company:
       name: SAPO (via BOLD by Devoteam)
@@ -41,8 +46,8 @@ experiences:
         start: July 2017
         end: December 2019
         responsibilities:
-          - "Implemented a monitoring stack with High Availability, using Grafana + Prometheus + Thanos (solely)"
-          - "Developed a Python/Django RESTful API for SSL Cert management (solely from scratch to production)"
+          - "Implemented a monitoring stack with High Availability, using Grafana + Prometheus + Thanos"
+          - "Developed a Python/Django RESTful API for SSL Cert management (from scratch to production)"
           - "DevOps advocate: improving Continuous Integration and best practices across the organization"
           - "Data Center migration: bare metal, VM’s, networking, data and storage (ensuring no downtime)"
           - "Maintaining 500+ servers (using Puppet), 100+ services, both legacy and modern systems, on-call 24/7"

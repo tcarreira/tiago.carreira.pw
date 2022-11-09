@@ -1,6 +1,6 @@
 # section information
 section:
-  name: About
+  name: About/Resume
   id: about
   enable: true
   weight: 1
@@ -19,15 +19,15 @@ resume: "files/resume.pdf"
 
 # a summary about you
 summary: |
-  Having ~9 years of experience with DevOps, I’m experienced with modern technologies (eg: Docker),
-  proficient with Linux systems and many DevOps tools (eg: git, CI/CD, monitoring) and I’m confident developing in
-  Python and Go.
+  Having 10+ years of experience with DevOps, I'm experienced with **modern technologies**
+  (eg: Docker), proficient with Linux systems and many **DevOps tools** (Kubernetes, CI/CD, IaC)
+  and I'm a Python and Go developer.
 
-  Passionate about Linux, Open Source and productivity (I love scripting and automation). No person should be a
-  single point of failure - procedures should be documented and/or automated.
+  Passionate about Linux, **Open Source** and **productivity** (I love scripting and automation).
+  No person should be a single point of failure - procedures should be documented and/or **automated**.
 
-  I’m looking towards working with smart people, with whom I could learn and help learning; where autonomy is a
-  valuable asset and improving is more important than finding who made a mistake.
+  I'm looking towards working with **smart people**, with whom I could learn and help learning;
+  where **autonomy** is a valuable asset and **improving** is more important than finding who made a mistake.
 
 
 # your social links

@@ -35,10 +35,10 @@ projects:
     summary: 100% free and open sourced podcast (hosting, website, art, automation, etc.)
     tags: ["hobby"]
 
-  - name: Advent of Code 2020
-    timeline: Dec 2020
+  - name: Advent of Code 2020/2021
+    timeline: Dec 2020 / Dec 2021
     url: https://github.com/tcarreira/adventofcode/tree/master/2020
-    summary: Solving programming puzzles in python (puzzles from [adventofcode.com](https://adventofcode.com/2020))
+    summary: Solving programming puzzles in python (puzzles from [adventofcode.com](https://adventofcode.com))
     tags: ["technical", "python"]
 
   - name: CRUD API in Go

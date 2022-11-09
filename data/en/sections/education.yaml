@@ -4,10 +4,33 @@ section:
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
-  weight: 4
+  weight: 3
   showOnNavbar: true
 
 degrees:
+  - icon: fa-check
+    institution:
+      name: Certifications
+    takenCourses:
+      courses:
+        - name: "August 2022 - CKA: Certified Kubernetes Administrator @ The Linux Foundation"
+          institution: The Linux Foundation (LF-chfkk1jnb4)
+          url: https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/4f50be2e-496a-414d-9cfd-4c288128b800-tiago-gomes-carreira-1d51559d-afa2-466f-8f4f-637804cb0a9f-certificate.pdf
+        - name: "September 2021 - GCP: Associate Cloud Engineer @ Google Cloud Certified"
+          institution: Google Cloud Certified (c880f8ea-7724-4ad4-9ad9-cf3e3f79fc28)
+          url: https://www.credential.net/c880f8ea-7724-4ad4-9ad9-cf3e3f79fc28
+
+  - icon: fa-laptop-code
+    institution:
+      name: Training and Courses
+    takenCourses:
+      courses:
+        - name: "June 2022 - CKA: Certified Kubernetes Administrator @ A Cloud Guru"
+        - name: July 2021 - Cloud Engineer @ Pluralsight
+        - name: May 2020 - NDG Linux I/II course @ Cisco Networking Academy
+        - name: Jan 2019 - LPI DevOps Tools Engineer @ Linux Academy
+        - name: Mar 2017 - Certified Ethical Hacker (CEH) @ e-careers
+
   - name: MSc. in Electrical and Computer Engineering
     icon: fa-graduation-cap
     timeframe: 2012-2017
@@ -27,20 +50,3 @@ degrees:
     extracurricularActivities:
       - Center for Electrical and Computer Engineering (Autonomous Section)
       - TUIST (Musical Band)
-
-  - icon: fa-cloud
-    name: Google Cloud Certified (c880f8ea-7724-4ad4-9ad9-cf3e3f79fc28)
-    timeframe: September 2021
-    institution:
-      name: GCP - Associate Cloud Engineer
-      url: https://www.credential.net/c880f8ea-7724-4ad4-9ad9-cf3e3f79fc28
-
-  - icon: fa-laptop-code
-    institution:
-      name: Training and Courses
-    takenCourses:
-      courses:
-        - name: July 2021 - Cloud Engineer @ Pluralsight
-        - name: May 2020 - NDG Linux I/II course @ Cisco Networking Academy
-        - name: Jan 2019 - LPI DevOps Tools Engineer @ Linux Academy
-        - name: Mar 2017 - Certified Ethical Hacker (CEH) @ e-careers

@@ -14,8 +14,11 @@ achievements:
   image: /images/sections/achievements/adrenaline.jpg
   summary: Trying new activities (skydiving, coasteering, rock climbing)
 - title: Sports
+  image: /images/sections/achievements/rockclimbing.jpg
+  summary: Running (marathon), cycling (Lisbon - Santiago 600+ Km), Obstacle Course Run, Rock Climbing
+- title: Sports
   image: /images/sections/achievements/running.jpg
-  summary: Running (marathon), cycling (Lisbon - Santiago 600+ Km), Obstacle Course Run
+  summary: Running (marathon), cycling (Lisbon - Santiago 600+ Km), Obstacle Course Run, Rock Climbing
 - title: Video production
   image: /images/sections/achievements/youtube.jpg
   summary: Short-video producer/editor/maker
@@ -25,6 +28,6 @@ achievements:
 - title: Music
   image: /images/sections/achievements/flute.jpg
   summary: Able to play clarinet, transverse flute, guitar, piano. Being part of multiple musical groups.
-- title: Being a father
+- title: Being a father of two
   image: /images/sections/achievements/parenting.jpg
   summary: Successfully surviving being a father since 2018
