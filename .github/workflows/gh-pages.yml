@@ -22,7 +22,7 @@ jobs:
 
       - name: Build
         run: |
-          today=$(date %Y-%m-%d)
+          today=$(date +%Y-%m-%d)
           sed -i -E "s@^modifiedTime:.*@modifiedTime: \"${today}\"@" data/en/site.yaml
           hugo --gc --minify --cleanDestinationDir
           [ -f ./CNAME ] && cp ./CNAME ./public/CNAME || true
