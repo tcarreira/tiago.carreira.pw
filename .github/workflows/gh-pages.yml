@@ -22,10 +22,11 @@ jobs:
 
       - name: Build
         run: |
+          today=$(date %Y-%m-%d)
+          sed -i -E "s@^modifiedTime:.*@modifiedTime: \"${today}\"@" data/en/site.yaml
           hugo --gc --minify --cleanDestinationDir
           [ -f ./CNAME ] && cp ./CNAME ./public/CNAME || true
           [ -f ./ALIAS ] && cp ./ALIAS ./public/ALIAS || true
-
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
