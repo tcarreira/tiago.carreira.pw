@@ -23,6 +23,12 @@ buttons:
     filter: "docker"
 
 projects:
+  - name: Advent of Code 2022
+    timeline: Dec 2022
+    url: https://github.com/tcarreira/aoc2022
+    summary: Solving AoC puzzles with Golang. Daily live streaming and solutions on [youtube](https://youtube.com/@tcarreira)
+    tags: ["technical", "go", "advent of code"]
+
   - name: Technical advisor for CA course
     timeline: Feb 2021
     url: https://github.com/tcarreira/nand2tetris
@@ -35,11 +41,11 @@ projects:
     summary: 100% free and open sourced podcast (hosting, website, art, automation, etc.)
     tags: ["hobby"]
 
-  - name: Advent of Code 2020/2021
-    timeline: Dec 2020 / Dec 2021
-    url: https://github.com/tcarreira/adventofcode/tree/master/2020
+  - name: Advent of Code 2020/21/22
+    timeline: Dec 2020 / 2021 / 2022
+    url: https://github.com/tcarreira/adventofcode/
     summary: Solving programming puzzles in python (puzzles from [adventofcode.com](https://adventofcode.com))
-    tags: ["technical", "python"]
+    tags: ["technical", "python", "go"]
 
   - name: CRUD API in Go
     timeline: Jul 2020
@@ -53,12 +59,6 @@ projects:
     summary: ROAW (Run Once A Week) - A dashboard for comparing Strava users' activities
     tags: ["hobby", "go", "heroku"]
 
-  - name: CRUD API in Python
-    timeline: May 2020
-    url: https://github.com/tcarreira/jogging-tracker
-    summary: Simple REST API for tracking jogging times of users
-    tags: ["technical", "python", "rest"]
-
   - name: Django on Docker
     timeline: Dec 2019
     url: https://github.com/tcarreira/django-docker
@@ -71,26 +71,8 @@ projects:
     summary: REST API for real time updates on a browser, using Server Side Events
     tags: ["hobby", "html", "go"]
 
-  - name: nand2tetris - grade with Docker
-    timeline: Feb 2021
-    url: https://github.com/tcarreira/nand2tetris-autograder
-    summary: Autograder for Nand2Tetris HDL projects on Docker container
-    tags: ["technical", "hobby", "docker"]
-
-  - name: Automate new podcast episodes
-    timeline: Oct 2020
-    url: https://github.com/marmita-de-redon/automation
-    summary: Script for rendering and publishing a new episode for the podcast [marmita.pt](https://marmita.pt)
-    tags: ["hobby", "bash"]
-
-  - name: Provide i18n for a Hugo theme
-    timeline: Sep 2020
-    url: https://github.com/tcarreira/hugo-clarity
-    summary: Contribute with internationalization for the Hugo-Clarity theme for Hugo
-    tags: ["hobby", "html"]
-
-  - name: Slides from my talks
+  - name: Public talks (and slides)
     timeline: 2019
     url: https://tcarreira.github.io/
-    summary: Slides made with remark-js - presentation slides as code
+    summary: Slides (made with remark-js) for my public talks - presentation slides as code
     tags: ["technical", "hobby", "docker", "talks"]
