@@ -20,7 +20,7 @@ experiences:
         responsibilities:
           - "Maintaining an Open Source PaaS (Platform as a Service) in Go - [tsuru.io](https://tsuru.io) | [github.com/tsuru](https:github.com/tsuru)"
           - "Managing multiple Kubernetes Clusters (with custom resources) - 300+ nodes | 15k+ pods"
-          - "Developing terraform providers"
+          - "Core developer on Open Source Software (backend, cli, terraform providers - mainly Go)"
       - designation: DevOps Specialist
         start: July 2021
         end: March 2022

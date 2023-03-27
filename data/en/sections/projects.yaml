@@ -26,7 +26,7 @@ projects:
   - name: Advent of Code 2022
     timeline: Dec 2022
     url: https://github.com/tcarreira/aoc2022
-    summary: Solving AoC puzzles with Golang. Daily live streaming and solutions on [youtube](https://youtube.com/@tcarreira)
+    summary: Solving AoC riddles with Golang. Daily live streaming and solutions on [youtube](https://youtube.com/@tcarreira)
     tags: ["technical", "go", "advent of code"]
 
   - name: Technical advisor for CA course
