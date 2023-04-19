@@ -9,70 +9,70 @@ section:
   # hideTitle: true
 
 buttons:
-  - name: All
-    filter: "all"
-  - name: Technical
-    filter: "technical"
-  - name: Hobbies
-    filter: "hobby"
-  - name: Go
-    filter: "go"
-  - name: Python
-    filter: "python"
-  - name: Docker
-    filter: "docker"
+- name: All
+  filter: "all"
+- name: Technical
+  filter: "technical"
+- name: Hobbies
+  filter: "hobby"
+- name: Go
+  filter: "go"
+- name: Python
+  filter: "python"
+- name: Docker
+  filter: "docker"
 
 projects:
-  - name: Advent of Code 2022
-    timeline: Dec 2022
-    url: https://github.com/tcarreira/aoc2022
-    summary: Solving AoC riddles with Golang. Daily live streaming and solutions on [youtube](https://youtube.com/@tcarreira)
-    tags: ["technical", "go", "advent of code"]
+- name: Terraform Provider (and API s/c)
+  timeline: Apr 2023
+  url: https://github.com/tcarreira/terraform-provider-apiserver
+  summary: Published a terraform provider for my custom API server (and a go client) for testing CRUD
+  tags: ["technical", "go", "rest", "terraform"]
 
-  - name: Technical advisor for CA course
-    timeline: Feb 2021
-    url: https://github.com/tcarreira/nand2tetris
-    summary: Advisor for teaching Computer Architecture fundamentals to teenagers ([treetree2.school](https://treetree2.school/cursos/2021/ac-i))
-    tags: ["hobby"]
+- name: Public talks (and slides)
+  timeline: 2019-2023
+  url: https://tcarreira.github.io/presentations/
+  summary: Slides (made with remark-js) for my public talks - presentation slides as code
+  tags: ["technical", "hobby", "docker", "talks"]
 
-  - name: Podcast (100% open sourced)
-    timeline: Sep 2020 - Jan 2021
-    url: https://github.com/marmita-de-redon
-    summary: 100% free and open sourced podcast (hosting, website, art, automation, etc.)
-    tags: ["hobby"]
+- name: Advent of Code 2022
+  timeline: Dec 2022
+  url: https://github.com/tcarreira/aoc2022
+  summary: Solving AoC riddles with Golang. Daily live streaming and solutions on [youtube](https://youtube.com/@tcarreira)
+  tags: ["technical", "go", "advent of code"]
 
-  - name: Advent of Code 2020/21/22
-    timeline: Dec 2020 / 2021 / 2022
-    url: https://github.com/tcarreira/adventofcode/
-    summary: Solving programming puzzles in python (puzzles from [adventofcode.com](https://adventofcode.com))
-    tags: ["technical", "python", "go"]
+- name: Technical advisor for CA course
+  timeline: Feb 2021
+  url: https://github.com/tcarreira/nand2tetris
+  summary: Advisor for teaching Computer Architecture fundamentals to teenagers ([treetree2.school](https://treetree2.school/cursos/2021/ac-i))
+  tags: ["hobby", "docker", ""]
 
-  - name: CRUD API in Go
-    timeline: Jul 2020
-    url: https://github.com/tcarreira/commentapi
-    summary: Simple CRUD REST API for storing and retrieving comments
-    tags: ["technical", "go", "rest"]
+- name: Podcast (100% open sourced)
+  timeline: Sep 2020 - Jan 2021
+  url: https://github.com/marmita-de-redon
+  summary: 100% free and open sourced podcast (hosting, website, art, automation, etc.)
+  tags: ["hobby", "markdown", "github-actions"]
 
-  - name: Dashboard for running activities
-    timeline: Jun 2020
-    url: https://github.com/tcarreira/roaw2020
-    summary: ROAW (Run Once A Week) - A dashboard for comparing Strava users' activities
-    tags: ["hobby", "go", "heroku"]
+- name: Advent of Code 2020/21/22
+  timeline: Dec 2020 / 2021 / 2022
+  url: https://github.com/tcarreira/adventofcode/
+  summary: Solving programming puzzles in python (puzzles from [adventofcode.com](https://adventofcode.com))
+  tags: ["technical", "python", "go"]
 
-  - name: Django on Docker
-    timeline: Dec 2019
-    url: https://github.com/tcarreira/django-docker
-    summary: A Django application (with celery) in Docker, used as demo for a talk
-    tags: ["technical", "python", "docker", "talks"]
+- name: Dashboard for running activities
+  timeline: Jun 2020
+  url: https://github.com/tcarreira/roaw2020
+  summary: ROAW (Run Once A Week) - A dashboard for comparing Strava users' activities
+  tags: ["hobby", "go", "heroku"]
 
-  - name: Manage remote slides with SSE
-    timeline: Oct 2019
-    url: https://github.com/tcarreira/remark-remote
-    summary: REST API for real time updates on a browser, using Server Side Events
-    tags: ["hobby", "html", "go"]
+- name: Django on Docker
+  timeline: Dec 2019
+  url: https://github.com/tcarreira/django-docker
+  summary: A Django application (with celery) in Docker, used as demo for a talk
+  tags: ["technical", "python", "docker", "talks"]
 
-  - name: Public talks (and slides)
-    timeline: 2019
-    url: https://tcarreira.github.io/
-    summary: Slides (made with remark-js) for my public talks - presentation slides as code
-    tags: ["technical", "hobby", "docker", "talks"]
+- name: Manage remote slides with SSE
+  timeline: Oct 2019
+  url: https://github.com/tcarreira/remark-remote
+  summary: REST API for real time updates on a browser, using Server Side Events
+  tags: ["hobby", "html", "go"]
