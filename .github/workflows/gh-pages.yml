@@ -7,17 +7,22 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: test resume updated string
         run: |
           dtstr=$(date --date="@$(git log -1 --pretty="format:%ct" static/files/resume.pdf)" +"%b %Y")
           grep "$dtstr" i18n/en.toml &>/dev/null || { echo "update i18n/en.toml file with '$dtstr'" ; exit 1 ; }
 
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
+    needs: [test]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
