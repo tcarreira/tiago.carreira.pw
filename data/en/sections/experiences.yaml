@@ -10,6 +10,19 @@ section:
 
 experiences:
   - company:
+      name: RedCloud Technologies
+      url: "https://redcloudtechnology.com/"
+      location: Lisbon, Portugal
+      overview: Intelligent Open Commerce Platform
+    positions:
+      - designation: DevOps Engineer
+        start: August 2023
+        responsibilities:
+          - Cloud management (AWS + terraform)
+          - Restructuring DevOps best practices and *-as-code
+          - Developing & maintaining terraform providers + internal tooling (Bash, Go, Python)
+
+  - company:
       name: Globo.com
       url: "https://globo.com"
       location: Rio de Janeiro, Brazil
@@ -17,6 +30,7 @@ experiences:
     positions:
       - designation: DevOps / Cloud Specialist @ tsuru.io
         start: April 2022
+        end: July 2023
         responsibilities:
           - "Maintaining an Open Source PaaS (Platform as a Service) in Go - [tsuru.io](https://tsuru.io) | [github.com/tsuru](https:github.com/tsuru)"
           - "Managing multiple Kubernetes Clusters (with custom resources) - 300+ nodes | 15k+ pods"
@@ -34,7 +48,7 @@ experiences:
         responsibilities:
           - "Designed / improved CI/CD Pipelines, using Gitlab-CI and Docker"
           - "Improved reliability for an API Gateway (Kong), serving 10K requests/s"
-          - "Programed and patch different code stacks (bash, Go, python, Lua, etc...)"
+          - "Programed and patch different code stacks (Bash, Go, Python, Lua, etc...)"
 
   - company:
       name: SAPO (via BOLD by Devoteam)
@@ -49,7 +63,7 @@ experiences:
           - "Implemented a monitoring stack with High Availability, using Grafana + Prometheus + Thanos"
           - "Developed a Python/Django RESTful API for SSL Cert management (from scratch to production)"
           - "DevOps advocate: improving Continuous Integration and best practices across the organization"
-          - "Data Center migration: bare metal, VM’s, networking, data and storage (ensuring no downtime)"
+          - "Data Center migration: bare metal, VM's, networking, data and storage (ensuring no downtime)"
           - "Maintaining 500+ servers (using Puppet), 100+ services, both legacy and modern systems, on-call 24/7"
           - "Solving internal operational tickets: forensics, bugs detection, infrastructure management"
 
@@ -63,6 +77,6 @@ experiences:
         start: December 2013
         end: June 2017
         responsibilities:
-          - "Migrated on-premises infrastructure to AWS (EC2, RDS, VPC, etc...) - infrastructure as code with python/boto3"
+          - "Migrated on-premises infrastructure to AWS (EC2, RDS, VPC, etc...) - infrastructure as code with Python/boto3"
           - "Defined the infrastructure and deployment pipeline for a High Available service on AWS - telpark.com"
           - "Managing Continuous Integration using Jenkins and Puppet"
