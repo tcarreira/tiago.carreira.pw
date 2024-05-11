@@ -12,14 +12,14 @@ experiences:
   - company:
       name: RedCloud Technologies
       url: "https://redcloudtechnology.com/"
-      location: Lisbon, Portugal
+      location: full-remote | Lisbon, Portugal
       overview: Intelligent Open Commerce Platform
     positions:
-      - designation: DevOps Engineer
+      - designation: Senior DevOps Engineer
         start: August 2023
         responsibilities:
           - Cloud management (AWS + terraform)
-          - Restructuring DevOps best practices and *-as-code
+          - Restructuring DevOps best practices and *-as-code (Terraform, Ansible, Concourse-CI)
           - Developing & maintaining terraform providers + internal tooling (Bash, Go, Python)
 
   - company:
