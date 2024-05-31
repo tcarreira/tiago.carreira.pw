@@ -35,6 +35,7 @@
               direction="{{ .direction }}"
               domain="{{ .domain }}"
               subject="{{ .subject }}"
+              toreplace="{{ .fakebody }}"
               target="/"
               href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}"
             >

@@ -17,16 +17,17 @@
     <ul class="contacts">
       {{ range .socialLinks }}
       <li>
-        {{ if eq .name "shadowed-mail" }}
+        {{ if eq .id "shadowed-mail" }}
           <a
             class="{{ .id }}"
             direction="{{ .direction }}"
             domain="{{ .domain }}"
             subject="{{ .subject }}"
+            toreplace="{{ .fakemail }}"
             target="/"
             href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}"
             >
-            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.fakemail}}</span>
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{ .fakemail }}</span>
           </a>
         {{ else if eq .name "Email" }}
           <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}">
