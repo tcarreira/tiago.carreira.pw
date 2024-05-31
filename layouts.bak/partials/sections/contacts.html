@@ -1,0 +1,55 @@
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+{{ $author:= site.Data.author }}
+{{ if (index site.Data site.Language.Lang).author }}
+  {{ $author = (index site.Data site.Language.Lang).author }}
+{{ end }}
+
+
+<div class="container anchor p-lg-5" id="{{ $sectionID }}">
+  {{ if not (.section.hideTitle) }}
+  <h1 class="text-center">{{ .section.name }}</h1>
+  {{ end }}
+  <div class="text-container ml-auto">
+    <ul class="contacts">
+      {{ range .socialLinks }}
+      {{ if eq .id "shadowed-mail" }}
+        <li>
+          <a
+            class="{{ .id }}"
+            direction="{{ .direction }}"
+            domain="{{ .domain }}"
+            subject="{{ .subject }}"
+            original="{{ .fakemail }}"
+            target="/"
+            href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}"
+          >
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.fakemail}}</span>
+          </a>
+        </li>
+        {{ else if eq .name "Email" }}
+          <li>
+            <a href="mailto:{{ .url }}" target="/">
+              <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+            </a>
+          </li>
+        {{ else if eq .name "Phone" }}
+          <li>
+            <a href="tel:{{ .url }}" target="/">
+              <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+            </a>
+          </li>
+        {{ else }}
+          <li>
+            <a href="{{ .url }}" target="/">
+              <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div>

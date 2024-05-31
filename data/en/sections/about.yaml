@@ -15,7 +15,8 @@ company:
   url: "https://redcloudtechnology.com"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+# Dreprecated. Use resourceLinks instead.
+# resume: "files/resume.pdf"
 
 # a summary about you
 summary: |
@@ -28,7 +29,6 @@ summary: |
 
   I'm looking towards working with **smart people**, with whom I could learn and help learning;
   where **autonomy** is a valuable asset and **improving** is more important than finding who made a mistake.
-
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -55,33 +55,53 @@ socialLinks:
   icon: "fab fa-telegram"
   url: "https://t.me/tcarreira"
 
+# You can put custom buttons to link your relevant resources.
+# For example, you can put link for your resume.
+resourceLinks:
+- title: "My Resume (last updated on May 2024)" # this date is checked on a GH-action test
+  url: "files/resume.pdf"
 
-# your soft skills
-# give the percentage between 50 to 100 with 5 intervals.
-# currently supported colors: blue, yellow, pink, green, sky, orange
-softSkills:
-- name: Productivity
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+# - type: certification
+#   name: Certified Kubernetes Security Specialist
+#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#   badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+
+- type: soft-skill-indicator
+  name: Productivity
   percentage: 100
   color: blue
-- name: Fast Learning
+
+- type: soft-skill-indicator
+  name: Fast Learning
   percentage: 100
   color: yellow
-- name: Adaptability
-  percentage: 100
-  color: pink
-- name: Proactivity
-  percentage: 100
-  color: green
-- name: Friendly
+
+- type: soft-skill-indicator
+  name: Adaptability
   percentage: 100
   color: orange
-- name: Solutionist
+
+- type: soft-skill-indicator
+  name: Proactivity
+  percentage: 100
+  color: green
+
+- type: soft-skill-indicator
+  name: Friendly
+  percentage: 100
+  color: orange
+
+- type: soft-skill-indicator
+  name: Solutionist
   percentage: 100
   color: sky
-# you can also provide color code instead of pre-defined color name
-# - name: Example 1
+
+# you can also provide color code instead of the color name
+# - type: soft-skill-indicator
+#   name: Example 1
 #   percentage: 75
 #   color: "#00adb5"
-# - name: Example 2
-#   percentage: 65
-#   color: "#8b8383"
