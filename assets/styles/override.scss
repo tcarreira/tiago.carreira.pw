@@ -1,0 +1,46 @@
+// make the tyny background image look just unfocused
+#homePageBackgroundImageDivStyled {
+    filter: blur(0.3em);
+    -webkit-filter: blur(0.3em);
+    -moz-filter: blur(0.3em);
+    -o-filter: blur(0.3em);
+    -ms-filter: blur(0.3em);
+}
+
+// keep img ratio on technical skills
+.card-img-xs {
+    object-fit: contain;
+    width: auto;
+}
+
+// Contacts section
+.contacts {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+html[data-theme='dark'] .contacts a{
+    color: get-dark-color('heading-color');
+}
+.contacts a {
+    color: get-light-color('heading-color');
+}
+
+.contacts a i,
+.contacts .svg-inline--fa {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+}
+
+
+// make transparent backgroud work with my background image
+html[data-theme='dark'] .top-navbar.transparent-navbar .navbar-brand,
+html[data-theme='dark'] .top-navbar.transparent-navbar .feather-menu,
+html[data-theme='dark'] .top-navbar.transparent-navbar .navbar-nav a,
+.top-navbar.transparent-navbar .navbar-brand,
+.top-navbar.transparent-navbar .feather-menu,
+.top-navbar.transparent-navbar .navbar-nav a {
+    color: get-light-color('heading-color');
+    stroke: get-light-color('heading-color');
+}
