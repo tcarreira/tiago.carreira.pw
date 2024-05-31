@@ -10,30 +10,39 @@
 
 
 <div class="container anchor p-lg-5" id="{{ $sectionID }}">
-    {{ if not (.section.hideTitle) }}
-    <h1 class="text-center">{{ .section.name }}</h1>
-    {{ end }}
-    <div class="text-container ml-auto">
-        <ul class="contacts">
-            {{ range .socialLinks }}
-            <li>
-                {{ if eq .name "shadowed-mail" }}
-                <a class="{{ .id }}" direction="{{ .direction }}" domain="{{ .domain }}" subject="{{ .subject }}"
-                    target="/" href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}">
-                    <i class="{{ .icon }}"></i>
-                </a>
-                {{ else if eq .name "Email" }}
-                <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default " noopener"}}"><i
-                        class="{{ .icon }}"></i></a>
-                {{ else if eq .name (i18n "phone") }}
-                <a href="tel:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default " noopener"}}"><i
-                        class="{{ .icon }}"></i></a>
-                {{ else }}
-                <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default " noopener"}}"><i
-                        class="{{ .icon }}"></i></a>
-                {{ end }}
-            </li>
-            {{ end }}
-        </ul>
-    </div>
+  {{ if not (.section.hideTitle) }}
+  <h1 class="text-center">{{ .section.name }}</h1>
+  {{ end }}
+  <div class="text-container ml-auto">
+    <ul class="contacts">
+      {{ range .socialLinks }}
+      <li>
+        {{ if eq .name "shadowed-mail" }}
+          <a
+            class="{{ .id }}"
+            direction="{{ .direction }}"
+            domain="{{ .domain }}"
+            subject="{{ .subject }}"
+            target="/"
+            href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}"
+            >
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.fakemail}}</span>
+          </a>
+        {{ else if eq .name "Email" }}
+          <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}">
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+          </a>
+        {{ else if eq .name (i18n "phone") }}
+          <a href="tel:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}">
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+          </a>
+        {{ else }}
+          <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}">
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+          </a>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
 </div>

@@ -31,14 +31,14 @@
           <li>
             {{ if eq .name "shadowed-mail" }}
             <a
-                class="{{ .id }}"
-                direction="{{ .direction }}"
-                domain="{{ .domain }}"
-                subject="{{ .subject }}"
-                target="/"
-                href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}"
-                >
-                <i class="{{ .icon }}"></i>
+              class="{{ .id }}"
+              direction="{{ .direction }}"
+              domain="{{ .domain }}"
+              subject="{{ .subject }}"
+              target="/"
+              href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}"
+            >
+              <i class="{{ .icon }}"></i>
             </a>
             {{ else if eq .name "Email" }}
               <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}"><i class="{{ .icon }}"></i></a>
