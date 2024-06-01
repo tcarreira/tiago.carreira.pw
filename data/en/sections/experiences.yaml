@@ -8,12 +8,15 @@ section:
   # Can optionally hide the title in sections
   # hideTitle: true
 
+# Your experiences
 experiences:
   - company:
       name: RedCloud Technologies
       url: "https://redcloudtechnology.com/"
       location: full-remote | Lisbon, Portugal
       overview: Intelligent Open Commerce Platform
+      logo: /images/sections/experiences/redcloud-color.png
+      darkLogo: /images/sections/experiences/redcloud-white.png
     positions:
       - designation: Senior DevOps Engineer
         start: August 2023
@@ -27,6 +30,8 @@ experiences:
       url: "https://globo.com"
       location: Rio de Janeiro, Brazil
       overview: The biggest media company in Latin America
+      logo: /images/sections/experiences/globo-color.png
+      # darkLogo:
     positions:
       - designation: DevOps / Cloud Specialist @ tsuru.io
         start: April 2022
@@ -55,6 +60,8 @@ experiences:
       url: "https://sapo.pt"
       location: Lisbon, Portugal
       overview: The national media content and services provider
+      logo: /images/sections/experiences/sapo-light.png
+      darkLogo: /images/sections/experiences/sapo-dark.png
     positions:
       - designation: DevOps / Operations Engineer
         start: July 2017
@@ -72,6 +79,7 @@ experiences:
       url: "https://premium-minds.com"
       location: Lisbon, Portugal
       overview: Software house, delivering premium technological solutions to their clients
+      logo: /images/sections/experiences/premium-minds.png
     positions:
       - designation: DevOps Engineer
         start: December 2013

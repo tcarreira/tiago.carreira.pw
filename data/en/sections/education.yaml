@@ -11,6 +11,7 @@ degrees:
   - icon: fa-check
     institution:
       name: Certifications
+      logo: /images/sections/education/certifications.png
     takenCourses:
       courses:
         - name: "August 2022 - CKA: Certified Kubernetes Administrator @ The Linux Foundation"
@@ -24,6 +25,7 @@ degrees:
     institution:
       name: Training and Courses
     takenCourses:
+      collapseAfter: 6
       courses:
         - name: "June 2022 - CKA: Certified Kubernetes Administrator @ A Cloud Guru"
         - name: July 2021 - Cloud Engineer @ Pluralsight
@@ -37,7 +39,14 @@ degrees:
     institution:
       name: Técnico Lisboa - University of Lisbon
       url: "https://tecnico.ulisboa.pt/en/"
+      logo: /images/sections/education/ist_color.png
+      darkLogo: /images/sections/education/ist_white.png
+    # grade: #(optional)
+    #   # scale: CGPA
+    #   achieved: 15
+    #   outOf: 20
     takenCourses:
+      collapseAfter: 2
       courses:
         - name: Major - Robotics & Control Systems
         - name: Minor - Computers

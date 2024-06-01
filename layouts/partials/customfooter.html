@@ -1,0 +1,79 @@
+{{/*  variables for enabling/disabling parts of the footer  */}}
+{{ $footerEnabled      := site.Params.footer.enable             | default true }}
+{{ $credentialsEnabled := site.Params.footer.credentials.enable | default true }}
+
+{{/*  Keep backward compatibility for the newsletter function */}}
+{{ if site.Params.newsletter }}
+  {{ if site.Params.newsletter.enable }}
+    {{ $newsletterEnabled = true }}
+  {{ else }}
+      {{ $newsletterEnabled = false }}
+  {{ end }}
+{{ end }}
+
+{{ if $footerEnabled }}
+  {{ $author:= site.Data.author }}
+  {{ if (index site.Data site.Language.Lang).author }}
+    {{ $author = (index site.Data site.Language.Lang).author }}
+  {{ end }}
+
+  {{ $copyrightNotice := now.Format "2006" | printf "© 2013-%s Copyright."}}
+  {{ if (index site.Data site.Language.Lang).site }}
+    {{ $siteConfig := (index site.Data site.Language.Lang).site }}
+    {{ if $siteConfig.copyright }}
+      {{ $copyrightNotice = $siteConfig.copyright }}
+    {{ end }}
+  {{ end }}
+
+  {{/*  footer logos  */}}
+  {{ $themeLogo := "/images/theme-logo.png" }}
+  {{ $hugoLogo := "/images/hugo-logo.svg" }}
+
+  {{/* resize the logos. don't resize svg because it is not supported */}}
+  {{ $themeLogo:= resources.Get $themeLogo}}
+  {{ if and $themeLogo (ne $themeLogo.MediaType.SubType "svg") }}
+    {{ $themeLogo = $themeLogo.Resize "32x" }}
+  {{ end }}
+  {{ $themeLogo = $themeLogo.RelPermalink}}
+
+  {{ $hugoLogo:= resources.Get $hugoLogo}}
+  {{ if and $hugoLogo (ne $hugoLogo.MediaType.SubType "svg")}}
+    {{ $hugoLogo = $hugoLogo.Resize "32x" }}
+  {{ end }}
+  {{ $hugoLogo = $hugoLogo.RelPermalink}}
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    {{ if $credentialsEnabled }}
+    <div class="container pt-3">
+      <div class="row text-start">
+        <div class="col-md-4">
+          {{ if $author }}{{ if $author.sourceRepo }}
+          <a href="{{ $author.sourceRepo }}" target="#">
+              This page is open sourced
+              <i class="fab fa-github"> </i>
+          </a>
+          {{end}}{{end}}
+        </div>
+        <div class="col-md-4 text-center">{{ $copyrightNotice | markdownify }}</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">
+          {{ i18n "hugoAttributionText" }}
+          <img
+            src="{{ $hugoLogo }}"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+          <br>
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            +
+            <img src="{{ $themeLogo }}" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </footer>
+{{end}}
+

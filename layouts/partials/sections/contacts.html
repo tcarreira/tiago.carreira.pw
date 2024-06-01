@@ -1,11 +1,11 @@
-{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ $sectionID := replace (lower .section.name) " " "-" }}
 {{ if .section.id }}
-  {{ $sectionID = .section.id }}
+{{ $sectionID = .section.id }}
 {{ end }}
 
 {{ $author:= site.Data.author }}
 {{ if (index site.Data site.Language.Lang).author }}
-  {{ $author = (index site.Data site.Language.Lang).author }}
+{{ $author = (index site.Data site.Language.Lang).author }}
 {{ end }}
 
 
@@ -16,39 +16,33 @@
   <div class="text-container ml-auto">
     <ul class="contacts">
       {{ range .socialLinks }}
-      {{ if eq .id "shadowed-mail" }}
-        <li>
+      <li>
+        {{ if eq .id "shadowed-mail" }}
           <a
             class="{{ .id }}"
             direction="{{ .direction }}"
             domain="{{ .domain }}"
             subject="{{ .subject }}"
-            original="{{ .fakemail }}"
+            toreplace="{{ .fakemail }}"
             target="/"
             href="mailto:{{ .fakemail }}?subject={{ .subject }}&body={{ .fakebody }}"
-          >
-            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.fakemail}}</span>
+            >
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{ .fakemail }}</span>
           </a>
-        </li>
         {{ else if eq .name "Email" }}
-          <li>
-            <a href="mailto:{{ .url }}" target="/">
-              <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
-            </a>
-          </li>
-        {{ else if eq .name "Phone" }}
-          <li>
-            <a href="tel:{{ .url }}" target="/">
-              <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
-            </a>
-          </li>
+          <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}">
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+          </a>
+        {{ else if eq .name (i18n "phone") }}
+          <a href="tel:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}">
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+          </a>
         {{ else }}
-          <li>
-            <a href="{{ .url }}" target="/">
-              <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
-            </a>
-          </li>
+          <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}">
+            <i class="{{ .icon }}"></i> <b>{{ .name }}:</b> <span>{{.url}}</span>
+          </a>
         {{ end }}
+      </li>
       {{ end }}
     </ul>
   </div>

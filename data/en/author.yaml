@@ -2,10 +2,10 @@
 name: "Tiago Carreira (tcarreira)"
 nickname: "Tiago Carreira"
 
-# greeting message before your name. it will default to "Hi! I am" if not provided
-greeting: "Hi, I am"
 image: "images/author/tcarreira.jpg"
 
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
 # some summary about what you do
 summary:
   - I am a Devops Engineer
