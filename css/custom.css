@@ -1,0 +1,45 @@
+#homePageBackgroundImageDivStyled {
+    filter: blur(0.3em);
+    -webkit-filter: blur(0.3em);
+    -moz-filter: blur(0.3em);
+    -o-filter: blur(0.3em);
+    -ms-filter: blur(0.3em);
+}
+
+.card-img-xs {
+    object-fit: contain;
+    width: auto;
+}
+
+.education-section .taken-courses ul {
+    margin-bottom: 1em !important;
+}
+
+.education-section .taken-courses .hidden-course {
+    display: list-item !important;
+}
+
+.education-section .taken-courses .show-more-btn {
+    display: none;
+}
+
+.initial-navbar {
+    background-color: #1c2d41;
+}
+
+.contacts a {
+    color: #3c4858;
+}
+.contacts a i {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+}
+.contacts {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.top-navbar {
+    padding: 0.5rem;
+}
