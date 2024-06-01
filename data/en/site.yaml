@@ -24,9 +24,7 @@ description: Senior DevOps Engineer and Open Source Software lover.
 openGraph:
   title: Tiago Carreira
   type: website
-  description: Portfolio and personal blog of John Doe.
   image: images/author/tcarreira.jpg
-  url: https://hugo-toha.github.io
 
 publishedTime: "2013-12-01"
 modifiedTime: "2000-01-01" # modified at buildTime with gh-actions
