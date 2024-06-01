@@ -51,6 +51,12 @@ outputs:
 
 enableEmoji: true
 
+sitemap:
+  changeFreq: ""
+  disable: false
+  filename: sitemap.xml
+  priority: 1
+
 # Site parameters
 params:
   # Background image of the landing page
