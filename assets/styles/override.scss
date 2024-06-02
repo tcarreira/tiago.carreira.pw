@@ -58,3 +58,7 @@ html[data-theme='dark'] .top-navbar.transparent-navbar .navbar-nav a,
     }
   }
 }
+// hide numbered experiences
+.experiences-section .circle {
+  visibility: hidden;
+}
