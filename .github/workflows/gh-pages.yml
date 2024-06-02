@@ -6,18 +6,6 @@ on:
       - main
 
 jobs:
-  test:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-      - name: test resume updated string
-        run: |
-          dtstr=$(date --date="@$(git log -1 --pretty="format:%ct" static/files/resume.pdf)" +"%b %Y")
-          grep "$dtstr" i18n/en.toml &>/dev/null || { echo "update i18n/en.toml file with '$dtstr'" ; exit 1 ; }
-
   deploy:
     runs-on: ubuntu-22.04
     needs: [test]
@@ -47,9 +35,13 @@ jobs:
         run: |
           today=$(date +%Y-%m-%d)
           sed -i -E "s@^modifiedTime:.*@modifiedTime: \"${today}\"@" data/en/site.yaml
+
+          dtstr=$(date --date="@$(git log -1 --pretty="format:%ct" static/files/resume.pdf)" +"%b %Y")
+          sed -i "s@_Jun 2025_@${dtstr}@g" data/en/sections/about.yaml
+
           hugo --gc --minify --cleanDestinationDir
           [ -f ./CNAME ] && cp ./CNAME ./public/CNAME || true
-          [ -f ./ALIAS ] && cp ./ALIAS ./public/ALIAS || true
+          [ -f ./ALIAS ] && cp ./ALIAS ./public/ALIAS || true``
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4.0.0

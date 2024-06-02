@@ -58,7 +58,7 @@ socialLinks:
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
 resourceLinks:
-- title: "My Resume (last updated on May 2024)" # this date is checked on a GH-action test
+- title: "My Resume (last updated on _Jun 2025_)" # CI: strict string '_Jun 2025_' replaced on build time
   url: "files/resume.pdf"
 
 # Show your badges
