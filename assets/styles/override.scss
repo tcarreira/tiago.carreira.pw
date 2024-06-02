@@ -44,3 +44,17 @@ html[data-theme='dark'] .top-navbar.transparent-navbar .navbar-nav a,
     color: get-light-color('heading-color');
     stroke: get-light-color('heading-color');
 }
+
+// keep experiences lines on small screens
+.experiences-section {
+    @include media('<=small') {
+    .timeline {
+      .vertical-line {
+        visibility: visible;
+      }
+      .horizontal-line {
+        visibility: visible;
+      }
+    }
+  }
+}
