@@ -18,6 +18,7 @@
   {{ end }}
 
   {{ $copyrightNotice := now.Format "2006" | printf "© 2013-%s Copyright."}}
+  {{ $siteConfig := (index site.Data site.Language.Lang).site }}
   {{ if (index site.Data site.Language.Lang).site }}
     {{ $siteConfig := (index site.Data site.Language.Lang).site }}
     {{ if $siteConfig.copyright }}
@@ -54,7 +55,13 @@
           </a>
           {{end}}{{end}}
         </div>
-        <div class="col-md-4 text-center">{{ $copyrightNotice | markdownify }}</div>
+        <div class="col-md-4 text-center">
+          {{ $copyrightNotice | markdownify }}
+          {{ with $siteConfig.modifiedTime }}
+            <br>
+            (last update @ {{ . | time.Format "Jan 2006" | safeHTMLAttr }})
+          {{ end }}
+        </div>
         <div class="col-md-4 text-end">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">
           {{ i18n "hugoAttributionText" }}

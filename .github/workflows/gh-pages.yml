@@ -31,17 +31,22 @@ jobs:
           hugo mod npm pack
           npm install
 
-      - name: Build
+      - name: Replace build time variables
         run: |
+          # set modified time as of today
           today=$(date +%Y-%m-%d)
           sed -i -E "s@^modifiedTime:.*@modifiedTime: \"${today}\"@" data/en/site.yaml
 
+          # replace last updated string with resume.pdf modified time
           dtstr=$(date --date="@$(git log -1 --pretty="format:%ct" static/files/resume.pdf)" +"%b %Y")
+          [ -z "$dtstr" ] && { echo "Failed to get resume.pdf update time." ; exit 2 ; }
           sed -i "s@_Jun 2025_@${dtstr}@g" data/en/sections/about.yaml
 
+      - name: Build
+        run: |
           hugo --gc --minify --cleanDestinationDir
           [ -f ./CNAME ] && cp ./CNAME ./public/CNAME || true
-          [ -f ./ALIAS ] && cp ./ALIAS ./public/ALIAS || true``
+          [ -f ./ALIAS ] && cp ./ALIAS ./public/ALIAS || true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4.0.0
