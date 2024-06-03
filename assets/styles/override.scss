@@ -62,3 +62,10 @@ html[data-theme='dark'] .top-navbar.transparent-navbar .navbar-nav a,
 .experiences-section .circle {
   visibility: hidden;
 }
+
+// Do not apply dark theme on personal endeavors texts (they already have a dark background)
+html[data-theme='dark'] .achievements-section #gallery .achievement-entry .title,
+html[data-theme='dark'] .achievements-section #gallery .caption h4 ,
+html[data-theme='dark'] .achievements-section #gallery .caption p {
+  color: get-light-color('inverse-text-color');
+}
