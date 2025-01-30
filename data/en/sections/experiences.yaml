@@ -11,6 +11,17 @@ section:
 # Your experiences
 experiences:
   - company:
+      name: Montblu (as independent worker)
+      url: "https://montblu.eu/"
+      overview: Cloud infrastructure done right
+    positions:
+      - designation: DevOps Engineer
+        start: September 2024
+        responsibilities:
+          - Cloud management (AWS)
+          - Infrastructure as Code - implementing best practices (Terraform)
+
+  - company:
       name: RedCloud Technologies
       url: "https://redcloudtechnology.com/"
       location: full-remote | Lisbon, Portugal
@@ -20,6 +31,7 @@ experiences:
     positions:
       - designation: Senior DevOps Engineer
         start: August 2023
+        end: August 2024
         responsibilities:
           - Cloud management (AWS + terraform)
           - Restructuring DevOps best practices and *-as-code (Terraform, Ansible, Concourse-CI)

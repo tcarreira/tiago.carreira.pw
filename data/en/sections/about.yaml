@@ -11,8 +11,8 @@ section:
 designation: Senior DevOps Engineer
 # your company information
 company:
-  name: RedCloud Technologies
-  url: "https://redcloudtechnology.com"
+  name: Montblu
+  url: "https://globo.com"
 
 # your resume. this file path should be relative to you "static" directory
 # Dreprecated. Use resourceLinks instead.
@@ -29,6 +29,9 @@ summary: |
 
   I'm looking towards working with **smart people**, with whom I could learn and help learning;
   where **autonomy** is a valuable asset and **improving** is more important than finding who made a mistake.
+
+  Also president of the board of ANSOL - Portuguese Association for Open Source Software (ansol.org).
+
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
