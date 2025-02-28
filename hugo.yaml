@@ -10,7 +10,7 @@ module:
   mounts:
   - source: static/files
     target: static/files
-  - source: ./node_modules/flag-icon-css/flags
+  - source: ./node_modules/flag-icons/flags
     target: static/flags
   - source: ./node_modules/@fontsource/mulish/files
     target: static/files
@@ -81,9 +81,8 @@ params:
 
   # Configure various features of this theme
   features:
-
-    # Enable dark theme
-    darkMode:
+    # Configure theme color settings
+    theme:
       enable: true
 
     # Enable and configure portfolio
@@ -182,4 +181,4 @@ params:
     # Put your template in "layouts/partials" folder of your repo.
     template: customfooter.html
     credentials:
-      enabled: true
+      enable: true
