@@ -58,6 +58,11 @@ socialLinks:
   icon: "fab fa-telegram"
   url: "https://t.me/tcarreira"
 
+- name: Mastodon
+  icon: "fab fa-mastodon"
+  url: "https://floss.social/@tcarreira"
+  rel: me
+
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
 resourceLinks:

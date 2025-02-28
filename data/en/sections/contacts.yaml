@@ -32,3 +32,8 @@ socialLinks:
 - name: Telegram
   icon: "fab fa-telegram"
   url: "https://t.me/tcarreira"
+
+- name: Mastodon
+  icon: "fab fa-mastodon"
+  url: "https://floss.social/@tcarreira"
+  rel: me
