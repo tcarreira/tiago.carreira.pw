@@ -1,7 +1,7 @@
 services:
   # needs this on the first run: docker compose run --rm hugo npm ci
   hugo:
-    image: hugomods/hugo:ci-non-root-0.142.0
+    image: hugomods/hugo:ci-non-root-0.146.6
     command: server -D
     volumes:
       - .:/src
