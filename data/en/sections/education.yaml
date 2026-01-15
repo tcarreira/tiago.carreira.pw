@@ -14,6 +14,9 @@ degrees:
       logo: /images/sections/education/certifications.png
     takenCourses:
       courses:
+        - name: "January 2026 - AWS Certified Solutions Architect - Associate"
+          institution: AWS (32bf0217faae4ac39256565c78dd0fb8)
+          url: https://cp.certmetrics.com/amazon/en/public/verify/credential/32bf0217faae4ac39256565c78dd0fb8
         - name: "August 2022 - CKA: Certified Kubernetes Administrator @ The Linux Foundation"
           institution: The Linux Foundation (LF-chfkk1jnb4)
           url: https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/4f50be2e-496a-414d-9cfd-4c288128b800-tiago-gomes-carreira-1d51559d-afa2-466f-8f4f-637804cb0a9f-certificate.pdf
@@ -27,6 +30,7 @@ degrees:
     takenCourses:
       collapseAfter: 6
       courses:
+        - name: Ultimate AWS Certified Solutions Architect Associate 2026 @ Udemy
         - name: "June 2022 - CKA: Certified Kubernetes Administrator @ A Cloud Guru"
         - name: July 2021 - Cloud Engineer @ Pluralsight
         - name: May 2020 - NDG Linux I/II course @ Cisco Networking Academy
