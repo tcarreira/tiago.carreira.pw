@@ -96,7 +96,13 @@
                                 {{ else }}
                                     <ul>
                                         {{ range $index,$course := .takenCourses.courses }}
-                                        <li class="course {{ if ge $index $collapseAfter }}hidden-course{{ end}}">{{ $course.name }}</li>
+                                        <li class="course {{ if ge $index $collapseAfter }}hidden-course{{ end}}">
+                                            {{ if $course.url }}
+                                            <a href="{{ $course.url }}">{{ $course.name }}</a>
+                                            {{ else }}
+                                            {{ $course.name }}
+                                            {{ end }}
+                                        </li>
                                         {{ end }}
                                     </ul>
                                 {{ end }}
