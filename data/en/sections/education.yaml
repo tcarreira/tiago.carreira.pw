@@ -13,6 +13,7 @@ degrees:
       name: Certifications
       logo: /images/sections/education/certifications.png
     takenCourses:
+      collapseAfter: 10
       courses:
         - name: "January 2026 - AWS Certified Solutions Architect - Associate"
           institution: AWS (32bf0217faae4ac39256565c78dd0fb8)
